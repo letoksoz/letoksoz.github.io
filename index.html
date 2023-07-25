@@ -1,73 +1,99 @@
 <!DOCTYPE html>
-<html lang="en-US"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Personal Website</title>
+  <!-- Add Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Your custom styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+    header {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    /* Style for links */
+    a {
+      color: #007BFF;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+    a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+    /* Style for project list items */
+    .list-group-item {
+      background-color: #f9f9f9;
+      border: none;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      border-radius: 0.25rem;
+    }
+    .list-group-item:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <header class="p-4">
+    <h1 class="display-4 mb-0">Your Name</h1>
+    <p class="lead">Welcome to My Personal Website</p>
+  </header>
+  <main class="p-4">
+    <h2>About Me</h2>
+    <p>Add some information about yourself here.</p>
 
-<!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>Home</title>
-<meta property="og:title" content="Welcome to GitHub Pages">
-<meta property="og:locale" content="en_US">
-<link rel="canonical" href="https://letoksoz.github.io/Levent-Toksoz/">
-<meta property="og:url" content="https://letoksoz.github.io/Levent-Toksoz/">
-<meta property="og:site_name" content="Levent-Toksoz">
-<script type="application/ld+json">
-{"name":"Levent-Toksoz","description":null,"author":null,"@type":"WebSite","url":"https://letoksoz.github.io/Levent-Toksoz/","image":null,"publisher":null,"headline":"Welcome to GitHub Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    <h2>Projects</h2>
+    <ul class="list-group">
+      <!-- Add your projects with links to more details -->
+      <li class="list-group-item"><a href="#">Project 1</a></li>
+      <li class="list-group-item"><a href="#">Project 2</a></li>
+      <!-- Add more projects as needed -->
+    </ul>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href="index_files/css.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="index_files/style.css">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Levent Toksoz</h1>
-      <h2 class="project-tagline"><br> M.Sc. Candidate in Computer Science at University of Chicago with a Passion for Deep Learning and Interdisciplinary Research</h2>
+    <h2>Publications</h2>
+    <ul class="list-group">
+      <!-- Add your publications with links to the respective papers on Google Scholar or other platforms -->
+      <li class="list-group-item"><a href="#">Publication 1</a></li>
+      <li class="list-group-item"><a href="#">Publication 2</a></li>
+      <!-- Add more publications as needed -->
+    </ul>
 
-    </section>
+    <h2>Google Scholar</h2>
+    <p>Add a link to your Google Scholar profile here, showcasing your academic publications and citations.</p>
 
-    <section class="main-content">
-      <h2 id="My current projects" class="main-content-tagline" href="#welcome-to-github-pages"><b>My Projects</b></h2>
+    <h2>Videos</h2>
+    <!-- Add videos explaining your publications here, providing insightful details about your research work -->
+    <p>Embed videos or provide links to videos explaining your publications.</p>
 
-
-<h3 id="NeuroD2-project" class="currentproject-tagline" ><b>NeuroD2 Project: </b></h3>
-
-<p>The aim of this project is to identify and characterize NeuroD2 protein&nbsp;binding sites on DNA using machine learning algorithms, such as logistic regression, neural networks and convolutional neural networks, which will enable us to better understand the functional role of NeuroD2 protein in neuronal differentiation. These algorithms are implemented using the&nbsp;Knet package in Julia. Data is obtained by combining several different datasets, including ChIP-Seq Data and Histone Binding Data. Different bioinformatic techniques are used to model&nbsp;the position of a NeuroD2 protein within DNA. Also, we implement window architecture, which uses a similar logic to RNN, to our machine learning models to represent the relationship between NeuroD2 protein and its interacting partners. The effect of this window architecture in one of our models can be seen in the following graph. </p>
-<p>
-  <figure>
-    <img src='graph.png' alt='graph' />
-    <figcaption> &emsp; &emsp; &emsp; &emsp; Neural Network with 2 hidden layers (64 nodes each) - lr = .01 and batchsize = 100</figcaption>
-  </figure>
-
-<h4 id="Code" class="codelink-tagline" ><b>Code: <a href="https://github.com/letoksoz/NeuroD2Machine-Learning"> https://github.com/letoksoz/NeuroD2Machine-Learning </a></b></h4>
-
-<h3 id="Accounting-project" class="currentproject-tagline" ><b>Accounting Paper Project: </b></h3>
-
-<p><b>Title:</b><i> "Machine Learning and Financial Distress Prediction"</i></p>
-<p>The aim of this project is to identify factors correlating with financial distress for the firms listed on the Borsa Istanbul Stock Exchange using machine learning algorithms, such as logistic regression, neural networks, beehive algorithm and random forests, which will enable us to develop a model to investigate the effect of certain financial ratios on the likelihood of financial distress. We have been implementing machine learning algorithms using Python. The repository is not yet available for public use. The short-term goal is to submit this paper to conferences in order to get feedback on the findings before ultimately submitting it to a journal.</p>
-
-<h2 id="Honors-thesis" class="main-content-tagline" ><b>Honors Thesis: </b></h2>
-<p><b>Title:</b><i> "21 cm Hydrogen Line and Its Power Spectrum"</i></p>
-<p><b>Advisor:</b> Professor Dragan Huterer (University of Michigan - Ann Arbor, Department of Physics)</p>
-
-<p>In this thesis, I examined the 21 cm Hydrogen Line and utilized statistical techniques, such as the Fisher Matrix, to forecast the precision of cosmological parameters inherent to the model in the presence of noise, using Python and CAMB sources.</p>
-
-<h4 id="Code" class="codelink-tagline" ><b>Link: <a href="https://letoksoz.github.io/21-cm%20Cosmology.pdf"> Honors Thesis </a></b></h4>
-
-
-<h2 id="Contact" class="main-content-tagline" ><b>Contact: </b></h2>
-
-<p>letoksoz@uchicago.edu</p>
-
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-    </section>
-
-
-
-
-</body></html>
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+    <p>GitHub: <a href="https://github.com/your-username">GitHub Profile</a></p>
+    <!-- Add more contact information or social media links if desired -->
+  </main>
+  <footer class="p-4">
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
+  <!-- Add Bootstrap and JavaScript scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
